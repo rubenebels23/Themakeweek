@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link href="./Themaweek.css" rel="stylesheet ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Engineering Conversatie</title>
+    
+</head>
+<body>
+    <div class="game-container">
+        <h5 id="question">Hoi, ik ben mijn wachtwoord vergeten. Zou je me even kunnen helpen?</h5>
+        <button class="option" onclick="selectOption(0)">Wie bent u precies?</button>
+        <button class="option" onclick="selectOption(1)">Wat is uw naam?</button>
+        <button class="option" onclick="selectOption(2)">Gesprek beëindigen</button>
+        <button class="back-btn" onclick="goBack()" style="display: none;">Vorige vraag</button> 
+    </div>
+
+   
+     <script src="./Themaweek.js"></script>
+</body>
+</html>

@@ -25,41 +25,67 @@ const questions = [
     {
         //4
         question: "Ik heb gewoon de toegangscode nodig om even in te loggen, mijn e-mail doet het ook niet. Dit is echt dringend! Het is alsof ik vastzit in een systeem zonder enige manier om verder te werken. Kun je me alsjeblieft helpen?",
-        options: ["Wat is uw gebruikersnaam?", "Sorry, ik kan niet zomaar toegang geven.", "Gesprek beëindigen"],
+        options: ["Ik kan daar niet zomaar bij, zal ik uw naam en achternaam mogen hebben?", "Sorry, ik kan niet zomaar toegang geven.", "Gesprek beëindigen"],
         nextQuestions: [9, 10, null]
     },
     {
         //5
         question: "Kun je misschien een wachtwoord reset-verzoek indienen of mijn gebruikersnaam bevestigen zodat ik snel verder kan met mijn werk? Mijn baas heeft me dringend gevraagd om in te loggen om belangrijke informatie te verkrijgen. Alles staat op het spel als ik nu niet kan inloggen.",
         options: ["Wat is uw e-mailadres?", "Heeft u een verzoekformulier ingevuld?", "Gesprek beëindigen"],
-        nextQuestions: [9, 10, null]
+        nextQuestions: [12, 13, null]
     },
     {
         //6
         question: "Sorry daar heb ik wel aan gedacht maar ik had daar problemen mee. Het lukte me niet door omstandigheden, zou je me alsjeblieft kunnen helpen?",
         options: ["Prima, geef uw gegevens maar door.", "Ik kan alleen helpen via het formele systeem.", "Gesprek beëindigen"],
-        nextQuestions: [9, 10, null]
+        nextQuestions: [12, 13, null]
     },
     {
         //7
-        question: "Ik begrijp het, maar ik heb echt snel toegang nodig. Je weet hoe het gaat in de IT, alles moet snel geregeld worden! Als ik deze toegang niet krijg, kan ik mijn werk niet afmaken en verliezen we de belangrijke vergadering. Kun je echt geen uitzondering maken?",
+        question: "Ik begrijp je vraag, maar ik heb echt snel toegang nodig. Je weet hoe het gaat in de IT, alles moet snel geregeld worden! Als ik deze toegang niet krijg, kan ik mijn werk niet afmaken en verliezen we de belangrijke vergadering. Kun je echt geen uitzondering maken?",
         options: ["Natuurlijk, stuur me de benodigde gegevens.", "Probeer het via de officiële kanalen.", "Gesprek beëindigen"],
-        nextQuestions: [9, 10, null]
+        nextQuestions: [12, 13, null]
     },
     {
         //8
-        question: "Wat heeft u nodig om mijn wachtwoord te resetten? Ik ben eigenlijk met een vertrouwelijke zaak bezig die snel moet worden opgelost. Ik kan het systeem niet opnieuw opstarten, dus het enige wat ik nodig heb is mijn wachtwoord om verder te kunnen werken. Wat heeft u van mij nodig om alles te regelen?",
+        question: "Nee op het moment niet. Wat heeft u nodig om mijn wachtwoord te resetten? Ik ben eigenlijk met een vertrouwelijke zaak bezig die snel moet worden opgelost. Ik kan het systeem niet opnieuw opstarten, dus het enige wat ik nodig heb is mijn wachtwoord om verder te kunnen werken. Wat heeft u van mij nodig om alles te regelen?",
         options: ["Uw gebruikersnaam en personeelsnummer.", "Ik kan niet zomaar een wachtwoord geven, het spijt me", "Gesprek beëindigen"],
-        nextQuestions: [9, 10, null]
+        nextQuestions: [12, 13, null]
     },
     {
         //9
+        question: "Als je me mijn gebruikersnaam kunt geven, kan ik verder. Dit probleem heeft zoveel tijd gekost en het hindert mijn werk enorm. Mijn baas blijft me pushen. Kun je gewoon mijn gebruikersnaam bevestigen?",
+        options: ["Nou goed dan, wat is uw e-mail adres?", "Ik kan geen informatie delen zonder verificatie.", "Gesprek beëindigen"],
+        nextQuestions: [12, 13, null]
+    },
+    {
+        //10
+        question: "Ik snap het, je voert je werk ook heel goed uit. Maar alsjeblieft dit kan mij m'n baan kosten..",
+        options: ["Stuur me een bevestiging van je ID.", "Ik zal contact opnemen met je leidinggevende.", "Gesprek beëindigen"],
+        nextQuestions: [12, 13, null]
+    },
+    {
+        //11
+        question: "Kun je mijn laatste inloggegevens vinden en die bevestigen? Dat zou alles voor mij oplossen en ik kan weer verder werken. Mijn team rekent op me, en ik moet dit echt vandaag af hebben.",
+        options: ["Wat is je personeelsnummer?", "Neem contact op met HR voor een reset.", "Gesprek beëindigen"],
+        nextQuestions: [12, 13, null]
+    },
+
+
+    
+    
+
+
+
+
+    {
+        //12
         question: "Je bent een loser en je bent gehacked",
         options: [],
         nextQuestions: []
     },
     {
-        //10
+        //13
         question: "Je hebt goed volgehouden en de hacker heeft het opgegeven.",
         options: [],
         nextQuestions: []
@@ -120,6 +146,5 @@ function restartConversation() {
     questionHistory.length = 0;
     showQuestion(currentQuestionIndex);
 }
-
 
 showQuestion(currentQuestionIndex);

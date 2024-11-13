@@ -52,8 +52,6 @@ const questions = [
         options: ["Uw gebruikersnaam en personeelsnummer.", "Ik kan niet zomaar een wachtwoord geven, het spijt me", "Gesprek beëindigen"],
         nextQuestions: [9, 10, null]
     },
-
-     
     {
         //9
         question: "Je bent een loser en je bent gehacked",
@@ -122,5 +120,6 @@ function restartConversation() {
     questionHistory.length = 0;
     showQuestion(currentQuestionIndex);
 }
+
 
 showQuestion(currentQuestionIndex);

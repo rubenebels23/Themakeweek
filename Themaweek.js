@@ -32,47 +32,37 @@ const questions = [
         //5
         question: "Kun je misschien een wachtwoord reset-verzoek indienen of mijn gebruikersnaam bevestigen zodat ik snel verder kan met mijn werk? Mijn baas heeft me dringend gevraagd om in te loggen om belangrijke informatie te verkrijgen. Alles staat op het spel als ik nu niet kan inloggen.",
         options: ["Wat is uw e-mailadres?", "Heeft u een verzoekformulier ingevuld?", "Gesprek beëindigen"],
-        nextQuestions: [11, 12, null]
+        nextQuestions: [9, 10, null]
     },
     {
         //6
         question: "Sorry daar heb ik wel aan gedacht maar ik had daar problemen mee. Het lukte me niet door omstandigheden, zou je me alsjeblieft kunnen helpen?",
         options: ["Prima, geef uw gegevens maar door.", "Ik kan alleen helpen via het formele systeem.", "Gesprek beëindigen"],
-        nextQuestions: [12, 11, null]
+        nextQuestions: [9, 10, null]
     },
     {
         //7
         question: "Ik begrijp het, maar ik heb echt snel toegang nodig. Je weet hoe het gaat in de IT, alles moet snel geregeld worden! Als ik deze toegang niet krijg, kan ik mijn werk niet afmaken en verliezen we de belangrijke vergadering. Kun je echt geen uitzondering maken?",
         options: ["Natuurlijk, stuur me de benodigde gegevens.", "Probeer het via de officiële kanalen.", "Gesprek beëindigen"],
-        nextQuestions: [12, 11, null]
+        nextQuestions: [9, 10, null]
     },
     {
         //8
         question: "Wat heeft u nodig om mijn wachtwoord te resetten? Ik ben eigenlijk met een vertrouwelijke zaak bezig die snel moet worden opgelost. Ik kan het systeem niet opnieuw opstarten, dus het enige wat ik nodig heb is mijn wachtwoord om verder te kunnen werken. Wat heeft u van mij nodig om alles te regelen?",
-        options: ["Dat kan ik niet voor u doen.", "Alleen uw gebruikersnaam is voldoende.", "Gesprek beëindigen"],
-        nextQuestions: [11, 9, null]
+        options: ["Uw gebruikersnaam en personeelsnummer.", "Ik kan niet zomaar een wachtwoord geven, het spijt me", "Gesprek beëindigen"],
+        nextQuestions: [9, 10, null]
     },
+
+
     {
         //9
-        question: "Oké, ik stuur je mijn gebruikersnaam en nummer nu, bedankt! Dit zou je veel tijd moeten besparen en we kunnen snel verder met het werk. Ik ben zeker dat alles in orde is als ik mijn gegevens nu aan je geef.",
-        options: ["Graag gedaan, ik regel het voor je.", "Gesprek beëindigen"],
-        nextQuestions: [12, 12, null]
+        question: "Je bent een loser en je bent gehacked",
+        options: [],
+        nextQuestions: []
     },
     {
         //10
-        question: "Einde van het gesprek. Je hebt goed opgelet en hebt ingezien dat dit een poging tot hacken was. Goed gedaan!",
-        options: [],
-        nextQuestions: []
-    },
-    {
-        //11
-        question: "De hacker heeft opgegeven en je hebt goed volgehouden. Je bent ook nog goed omgegaan door klantvriendelijk te doen!",
-        options: [],
-        nextQuestions: []
-    },
-    {
-        //12
-        question: "Je bent een loser en je bent gehacked.",
+        question: "Je hebt goed volgehouden en de hacker heeft het opgegeven.",
         options: [],
         nextQuestions: []
     }

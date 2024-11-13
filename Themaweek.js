@@ -12,7 +12,7 @@ const questions = [
     },
     {
         //2
-        question: "Ja, natuurlijk, ik ben Jan van de IT-afdeling. Kun je me snel helpen met mijn inloggegevens? Ik ben bezig met het oplossen van een systeemfout, maar ik ben nu ingelogd op een andere computer en heb snel toegang nodig om alles af te ronden. Wat heeft u nodig om mij in te loggen?",
+        question: "Ja, natuurlijk, ik ben Jan van de IT-afdeling. Kun je me snel helpen met mijn inloggegevens? Ik ben bezig met het oplossen van een systeemfout, maar ik ben nu ingelogd op een andere computer en heb snel toegang nodig om alles af te ronden.",
         options: ["Natuurlijk, wat heeft u nodig?", "Heeft u al een reset-email geprobeerd?", "Gesprek beëindigen"],
         nextQuestions: [5, 6, null]
     },
@@ -80,13 +80,13 @@ const questions = [
 
     {
         //12
-        question: "Je bent een loser en je bent gehacked",
+        question: "De hacker heeft ingebroken in je account. De volgende keer minder weggeven en beter opletten!",
         options: [],
         nextQuestions: []
     },
     {
         //13
-        question: "Je hebt goed volgehouden en de hacker heeft het opgegeven.",
+        question: "Je hebt goed volgehouden en de hacker heeft het opgegeven!",
         options: [],
         nextQuestions: []
     }

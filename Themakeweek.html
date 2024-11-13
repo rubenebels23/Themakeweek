@@ -9,12 +9,15 @@
 </head>
 <body>
     <div class="game-container">
+        <div class="options">
         <h5 id="question">Hoi, ik ben mijn wachtwoord vergeten. Zou je me even kunnen helpen?</h5>
         <button class="option" onclick="selectOption(0)">Wie bent u precies?</button>
         <button class="option" onclick="selectOption(1)">Wat is uw naam?</button>
         <button class="option" onclick="selectOption(2)">Gesprek beëindigen</button>
-        <button class="back-btn" onclick="goBack()" style="display: none;">Vorige vraag</button> 
-    </div>
+        </div>
+        <button class="back-btn" onclick="goBack()">Terug</button>
+        <button class="restart-btn" onclick="restartConversation()" style="display: none;">Opnieuw spelen</button>
+    </div>  
 
    
      <script src="./Themaweek.js"></script>
